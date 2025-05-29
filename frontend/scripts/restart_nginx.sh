@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo systemctl restart nginx
+echo "Restarting Nginx..."
+systemctl restart nginx

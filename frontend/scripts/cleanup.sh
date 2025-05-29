@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo rm -rf /usr/share/nginx/html/*
+echo "Cleaning up old files..."
+rm -rf /usr/share/nginx/html/*
