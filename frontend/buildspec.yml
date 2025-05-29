@@ -32,8 +32,9 @@ phases:
       - cp -R scripts/ dist/ || echo "Failed to copy scripts directory"
 artifacts:
   files:
-    - '**/*'
-  base-directory: frontend/dist
+    - appspec.yml         # Include appspec.yml at the artifact root
+    - frontend/dist/**/*  # Include all files in frontend/dist, preserving the frontend/dist path
+    - frontend/scripts/*  # Include scripts, preserving the frontend/scripts path
   discard-paths: no
 cache:
   paths:

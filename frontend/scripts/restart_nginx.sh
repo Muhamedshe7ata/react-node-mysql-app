@@ -1,3 +1,3 @@
-#!/bin/bash
+echo '#!/bin/bash
 echo "Restarting Nginx..."
-systemctl restart nginx
+systemctl restart nginx' > frontend/scripts/restart_nginx.sh
