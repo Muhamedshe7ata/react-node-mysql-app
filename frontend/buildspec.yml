@@ -18,7 +18,7 @@ phases:
       - echo "VITE_API_URL='$VITE_API_URL'" > .env
       - echo "Environment variables have been saved to .env"
       - echo "Making scripts executable..."
-      - chmod +x frontend/scripts/*.sh  # Add this line to make scripts executable
+      - chmod +x scripts/*.sh  # Add this line to make scripts executable
   build:
     commands:
       - echo Building the React app...
