@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl restart nginx
+sudo rm -rf /usr/share/nginx/html/*
