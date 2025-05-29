@@ -1,3 +1,2 @@
-echo '#!/bin/bash
-echo "Cleaning up old files..."
-rm -rf /usr/share/nginx/html/*' > frontend/scripts/cleanup.sh
+#!/bin/bash
+sudo rm -rf /usr/share/nginx/html/*
