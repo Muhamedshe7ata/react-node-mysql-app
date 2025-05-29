@@ -34,10 +34,8 @@ artifacts:
   files:
     artifacts:
     files:
-     - appspec.yml         # Include appspec.yml at the artifact root
-     - frontend/dist/**/*  # Include all files in frontend/dist
-     - frontend/scripts/*  # Include scripts
-    base-directory: .
+      - '**/*'
+    
 cache:
   paths:
     - frontend/node_modules/**/*  # Caches node_modules for the frontend app to speed up future builds
