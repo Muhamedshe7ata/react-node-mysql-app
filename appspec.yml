@@ -6,11 +6,11 @@ files:
     overwrite: yes
 hooks:
   BeforeInstall:
-    - location: frontend/scripts/cleanup.sh  # Script to remove old files
+    - location:  scripts/cleanup.sh  # Script to remove old files
       timeout: 300
       runas: root
   AfterInstall:
-    - location: frontend/scripts/restart_nginx.sh  # Script to restart Nginx
+    - location:  scripts/restart_nginx.sh  # Script to restart Nginx
       timeout: 300
       runas: root
 
