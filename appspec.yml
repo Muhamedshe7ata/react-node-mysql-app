@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /usr/share/nginx/html  # Path where Nginx serves the files
+    overwrite: yes
+hooks:
+  BeforeInstall:
+    - location: frontend/scripts/cleanup.sh  # Script to remove old files
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: frontend/scripts/restart_nginx.sh  # Script to restart Nginx
+      timeout: 300
+      runas: root
+
