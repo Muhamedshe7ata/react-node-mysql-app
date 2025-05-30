@@ -30,14 +30,11 @@ phases:
       - cp appspec.yml dist/ || echo "Failed to copy appspec.yml"
       - echo Copying scripts directory to dist directory...
       - cp -R scripts/ dist/ || echo "Failed to copy scripts directory"
+
 artifacts:
-  files:
-  
-     - appspec.yml         # Include appspec.yml at the artifact rootAdd commentMore actions
-     - frontend/dist/**/*  # Include all files in frontend/dist
-     - frontend/scripts/*  # Include scripts
-  base-directory: .
-    
+    files:
+       - '**/*'
+    base-directory: frontend/dist
 cache:
   paths:
     - frontend/node_modules/**/*  # Caches node_modules for the frontend app to speed up future builds
