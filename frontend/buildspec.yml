@@ -32,9 +32,7 @@ phases:
       - cp -R scripts/ dist/ || echo "Failed to copy scripts directory"
 artifacts:
   files:
-    artifacts:
-    files:
-      - '**/*'
+     - '**/*'
     
 cache:
   paths:
