@@ -33,6 +33,8 @@ phases:
 artifacts:
   files:
      - '**/*'
+  base-directory: frontend/dist
+  discard-paths: no
     
 cache:
   paths:
