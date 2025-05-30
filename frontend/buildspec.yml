@@ -32,7 +32,7 @@ phases:
       - cp -R scripts/ dist/ || echo "Failed to copy scripts directory"
 artifacts:
   files:
-     - '**/*'
+    - '**/*'
   base-directory: frontend/dist
   discard-paths: no
     
