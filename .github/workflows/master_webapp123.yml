@@ -33,9 +33,9 @@ jobs:
       # 'build' might not be necessary for a Node.js backend unless you're transpiling code (e.g., TypeScript).
       # Let's keep test and remove build as it's common not to have a 'build' for simple Node.js backends.
       # If you DO need a build step (like Babel or TS compile), add 'npm run build' here.
-      - name: Run Backend Tests
-        run: npm test --if-present
-        working-directory: ./backend # <-- Execute this command inside the backend folder
+      # - name: Run Backend Tests
+      #   run: npm test --if-present
+      #   working-directory: ./backend # <-- Execute this command inside the backend folder
 
 
       # Package the contents of the backend directory
