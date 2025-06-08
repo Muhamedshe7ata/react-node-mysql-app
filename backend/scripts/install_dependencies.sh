@@ -9,3 +9,4 @@ echo "Successfully navigated to /srv/react-node-mysql-app/backend"
 echo "Running npm install to install dependencies..."
 npm install
 echo "npm install completed successfully"
+##############
