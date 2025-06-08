@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "pm2 start server.js --interpreter node"
+      "test": "echo \"Error: no test specified\" && exit 1",
+     "serve": "pm2 start server.js --interpreter node",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "",
