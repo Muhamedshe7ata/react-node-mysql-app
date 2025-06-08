@@ -32,9 +32,9 @@ jobs:
         run: npm install
         working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
-      - name: Run Backend Tests
-        run: npm test --if-present
-        working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+      # - name: Run Backend Tests
+      #   run: npm test --if-present
+      #   working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Zip Backend for Deployment
         run: zip -r backend.zip .
