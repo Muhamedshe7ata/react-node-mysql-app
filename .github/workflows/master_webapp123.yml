@@ -72,7 +72,7 @@ jobs:
           app-name: 'myreactnodeapi-abcXYZ' # Your Azure App Service name
           slot-name: 'Production' # The deployment slot (usually Production for the main site)
           package: ${{ runner.temp }}/release-package/release.zip # Point directly to the downloaded zip file
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_748E22D9E0F742CCB5819DD3A4DA2803 }} # Your secure publish profile
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D7EBA9257E2B41D5BAAFFD845AA7CBF3 }} # Your secure publish profile
 # # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 ## More GitHub Actions for Azure: https://github.com/Azure/actions
 # name: Build and deploy Node.js app to Azure Web App - webapp123
