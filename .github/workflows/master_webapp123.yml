@@ -69,7 +69,7 @@ jobs:
         id: deploy-to-webapp # Assign an ID to this step to reference its outputs (like webapp-url)
         uses: azure/webapps-deploy@v3 # Use the Azure Web App deployment action
         with:
-          app-name: 'webapp123' # Your Azure App Service name
+          app-name: 'myreactnodeapi-abcXYZ' # Your Azure App Service name
           slot-name: 'Production' # The deployment slot (usually Production for the main site)
           package: ${{ runner.temp }}/release-package/release.zip # Point directly to the downloaded zip file
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_748E22D9E0F742CCB5819DD3A4DA2803 }} # Your secure publish profile
