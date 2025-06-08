@@ -68,7 +68,7 @@
             id: deploy-to-webapp # ID to reference outputs
             uses: azure/webapps-deploy@v3 # The action to deploy to Azure Web App
             with:
-              app-name: ${{ env.AZURE_WEBAPP_NAME }}
+              app-name: myreactnodeapi-abcXYZ
               slot-name: 'Production' # Your deployment slot
               # Point 'package' to the downloaded zip file
               package: ${{ runner.temp }}/backend-package/backend.zip
