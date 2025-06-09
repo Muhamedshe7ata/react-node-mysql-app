@@ -283,11 +283,17 @@ function App() {
         {/* Display authors in a list/table (based on your other frontend files like AuthorsPage.tsx) */}
          <h2>Authors List</h2>
          {authors && authors.length > 0 ? (
-            <ul>
-              {authors.map(author => (
-                 <li key={author.id}>{author.name}</li> {/* Assuming Author model has 'id' and 'name' */}
-              ))}
-           </ul>
+
+          <ul>
+            {authors && authors.map(author => (
+              <li key={author.id}>{author.name}</li>
+            ))}
+          </ul>
+          //   <ul>
+          //     {authors.map(author => (
+          //        <li key={author.id}>{author.name}</li> {/* Assuming Author model has 'id' and 'name' */}
+          //     ))}
+          //  </ul>
          ) : (
            <p>No author data available. Check API or authors fetch logic.</p>
          )}
