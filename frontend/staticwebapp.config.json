@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "route": "/books",
+      "rewrite": "https://myreactnodeapi-abcxyz-a9dweqh3amcebrf8.westus2-01.azurewebsites.net:3200/books"
+    },
+    {
+      "route": "/authors",
+      "rewrite": "https://myreactnodeapi-abcxyz-a9dweqh3amcebrf8.westus2-01.azurewebsites.net:3200/authors"
+    },
+    {
       "route": "/api/*",
       "rewrite": "https://myreactnodeapi-abcxyz-a9dweqh3amcebrf8.westus2-01.azurewebsites.net:3200/api/:path*"
     },
