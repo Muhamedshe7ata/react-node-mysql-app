@@ -61,7 +61,9 @@ function App() {
   // Only one fetchBooks definition, and it matches json-server's array response
   const fetchBooks = async () => {
   try {
-    const response = await fetch('/api/books');
+    //const response = await fetch('/api/books');
+    //
+    const response = await fetch(`${import.meta.env.REACT_APP_API_URL}/api/books`); // Uses the backend URL from config
     const books = await response.json();
 
     if (!response.ok) {
